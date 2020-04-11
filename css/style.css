@@ -1,0 +1,222 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #711c91;
+  --secondary-color: #00ff9f;
+  --third-color: #133e7c;
+  --fourth-color: #feff6e;
+  --fifth-color: #c1246b;
+  --sixth-color: #0abdc6;
+  --seventh-color: #503d90;
+  --light-color: #fff;
+  --dark-color: #333;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  line-height: 1.7;
+  font-size: 18px;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* ----- Shared CSS ----- */
+
+/* Buttons */
+
+.btnMain {
+  font-size: 16px;
+  background-color: var(--primary-color);
+  padding: 1.2rem 2.5rem;
+  border-radius: 1000px;
+  color: var(--light-color);
+  outline: none;
+  transition: all 0.3s;
+}
+.btnMain:hover {
+  cursor: pointer;
+  background-color: var(--seventh-color);
+}
+
+/* Page Headers */
+
+.pageHeader {
+  background-color: var(--dark-color);
+  color: var(--light-color);
+  position: relative;
+  padding: 2rem;
+}
+
+.pageHeader:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  content: "";
+  opacity: 0.5;
+}
+
+.headerContainer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+}
+
+.headerContent {
+  z-index: 2;
+  margin: 0 auto;
+}
+
+.headerTitle {
+  font-size: 4rem;
+  font-weight: bold;
+  line-height: 1.6;
+}
+
+/* ----- Nav bar ----- */
+
+#mainNav {
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 50;
+}
+.navUl {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 2rem;
+  background-color: var(--sixth-color);
+}
+
+.navLi {
+  padding: 1rem 1.5rem;
+  color: var(--dark-color);
+  font-weight: bold;
+}
+.navLi:hover {
+  background-color: var(--fourth-color);
+  color: var(--dark-color);
+}
+
+.logo {
+  height: 30px;
+  position: absolute;
+  top: 25%;
+  left: 10%;
+}
+
+.current {
+  background-color: var(--primary-color);
+  color: var(--light-color);
+}
+
+/* ----- Index Page ----- */
+
+/* Header Main */
+
+#headerMain:before {
+  background: url("/img/main1-scaled.png") no-repeat center center / cover;
+}
+
+#indexHeader {
+  padding-left: 10%;
+}
+
+/* News Letters */
+
+#newsLetters {
+  background-color: var(--seventh-color);
+}
+
+.mainStory {
+  padding: 4rem 8%;
+  border-top: 8px solid #ccc;
+  border-bottom: 8px solid #ccc;
+}
+
+.mainStoryHeader {
+  text-align: center;
+  font-weight: bold;
+  font-size: 3rem;
+  color: #ccc;
+  padding-bottom: 3rem;
+}
+
+.newsletterGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.cardTitle {
+  font-weight: bold;
+  font-size: 22px;
+  padding-bottom: 0.5rem;
+}
+
+.cardInfo {
+  padding: 1rem;
+}
+
+.cardBody {
+  padding-bottom: 1rem;
+}
+
+#card1 {
+  display: flex;
+  background-color: var(--fourth-color);
+  grid-column: 1 / span 2;
+}
+#card1img {
+  padding: 1rem;
+}
+
+#card2 {
+  background-color: var(--dark-color);
+  color: var(--light-color);
+}
+
+#card3,
+#card4,
+#card5 {
+  background-color: var(--light-color);
+}
+
+#card3img,
+#card4img,
+#card5img {
+  width: 100%;
+}
+
+#card6 {
+  background-color: var(--third-color);
+  color: var(--light-color);
+}
+
+#card7 {
+  background-color: var(--dark-color);
+  color: var(--light-color);
+  grid-column: 2 / span 2;
+}
+#cardInfo7 {
+  display: flex;
+}
+.cardWrapper {
+  width: 50%;
+}
+#card7img {
+  width: 50%;
+}
