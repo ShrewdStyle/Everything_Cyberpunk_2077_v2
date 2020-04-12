@@ -38,7 +38,6 @@ a {
   font-size: 16px;
   background-color: var(--primary-color);
   padding: 1.2rem 2.5rem;
-  border-radius: 1000px;
   color: var(--light-color);
   outline: none;
   transition: all 0.3s;
@@ -46,6 +45,32 @@ a {
 .btnMain:hover {
   cursor: pointer;
   background-color: var(--seventh-color);
+}
+
+.btnSecond {
+  font-size: 16px;
+  padding: 0.6rem 5rem;
+  outline: none;
+  transition: all 0.3s;
+  background-color: var(--sixth-color);
+}
+.btnSecond:hover {
+  cursor: pointer;
+  background-color: var(--third-color);
+}
+
+.btnThird {
+  font-size: 16px;
+  background-color: var(--secondary-color);
+  padding: 0.8rem 2rem;
+  color: var(--dark-color);
+  outline: none;
+  transition: all 0.3s;
+}
+.btnThird:hover {
+  cursor: pointer;
+  background-color: var(--fifth-color);
+  color: var(--light-color);
 }
 
 /* Page Headers */
@@ -219,4 +244,85 @@ a {
 }
 #card7img {
   width: 50%;
+}
+
+/* ----- Footer Main ----- */
+
+#footerMain {
+  background-color: var(--dark-color);
+}
+
+.newsletterSub {
+  text-align: center;
+  padding: 3rem;
+  color: var(--light-color);
+  border-bottom: 8px solid #ccc;
+}
+
+.subHeader {
+  font-weight: bold;
+  font-size: 1.8rem;
+}
+
+#subEmail {
+  font-size: 18px;
+  display: block;
+  margin: 1rem auto;
+  padding: 0.3rem;
+  outline: none;
+  text-align: center;
+}
+
+.footerColumns {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 4rem 10%;
+  color: var(--light-color);
+}
+
+#footerLogo {
+  width: 250px;
+  padding-bottom: 1rem;
+}
+
+.footerQuote,
+.siteLinks,
+.join {
+  padding: 0 10%;
+  margin: 0 auto;
+}
+.siteLinks {
+  width: 70%;
+}
+
+.links,
+.joinHeader {
+  font-weight: bold;
+  padding-bottom: 0.5rem;
+}
+
+.siteLink {
+  color: var(--light-color);
+}
+.siteLink:hover {
+  color: var(--secondary-color);
+}
+
+.joinText {
+  padding-bottom: 1rem;
+}
+
+.footerLi {
+  padding: 0.5rem 0;
+  border-bottom: 1px dotted grey;
+}
+
+.signature {
+  text-align: center;
+  padding: 2rem;
+  color: lightgray;
+  font-size: 16px;
+}
+.sigSpan {
+  color: var(--secondary-color);
 }
