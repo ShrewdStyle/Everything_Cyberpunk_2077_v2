@@ -73,13 +73,27 @@ a {
   color: var(--light-color);
 }
 
+.btnContact {
+  display: block;
+  margin-top: 4rem;
+  padding: 1rem 4rem;
+  font-size: 16px;
+  background-color: var(--sixth-color);
+  transition: all 0.3s;
+}
+.btnContact:hover {
+  cursor: pointer;
+  background-color: var(--third-color);
+  color: var(--light-color);
+}
+
 /* Page Headers */
 
 .pageHeader {
   background-color: var(--dark-color);
   color: var(--light-color);
   position: relative;
-  padding: 2rem;
+  padding: 2rem 2rem 2rem 10%;
 }
 
 .pageHeader:before {
@@ -154,10 +168,6 @@ a {
 
 #headerMain:before {
   background: url("/img/main1-scaled.png") no-repeat center center / cover;
-}
-
-#indexHeader {
-  padding-left: 10%;
 }
 
 /* News Letters */
@@ -325,4 +335,120 @@ a {
 }
 .sigSpan {
   color: var(--secondary-color);
+}
+
+/* ----- About Us ----- */
+
+#headerAbout:before {
+  background: url("/img/neon3.jpg") no-repeat center center / cover;
+}
+
+.whoContainer {
+  background-color: var(--seventh-color);
+  border-top: 6px solid var(--sixth-color);
+  border-bottom: 6px solid var(--sixth-color);
+  padding: 3rem 5%;
+}
+
+.aboutInfo {
+  display: flex;
+}
+
+.whoHeader,
+.whoTextContainer {
+  width: 50%;
+}
+.whoHeader {
+  text-align: center;
+  font-size: 6rem;
+  font-weight: bold;
+  color: #ccc;
+  word-spacing: 999px;
+}
+.whoTextContainer {
+  padding: 6rem 0;
+}
+.whoText {
+  font-size: 20px;
+  color: var(--light-color);
+  line-height: 1.8;
+  padding: 0.5rem 0;
+}
+
+.parallax {
+  background: url("/img/parallax.jpg") no-repeat center center / cover;
+  height: 500px;
+  background-attachment: fixed;
+}
+
+.creatorContainer {
+  display: flex;
+  border-top: 6px solid var(--sixth-color);
+  background-color: #090909;
+  color: var(--light-color);
+}
+.creatorText,
+.aboutVideo {
+  width: 50%;
+}
+.creatorText {
+  padding: 4rem;
+}
+.mikeHeader {
+  font-weight: bold;
+  font-size: 1.6rem;
+  padding-bottom: 1rem;
+}
+.aboutVideo {
+  padding: 4rem;
+}
+
+/* ----- Contact ----- */
+
+#headerContact {
+  background: url("/img/city1.jpg") no-repeat center center / cover;
+  background-color: black;
+  opacity: 0.8;
+}
+
+.contactContainer {
+  padding: 6rem 10%;
+  border-top: 6px solid var(--fifth-color);
+  border-bottom: 6px solid var(--fifth-color);
+  background-color: #090909;
+  color: var(--light-color);
+}
+
+.contactTitle {
+  padding-bottom: 1rem;
+}
+
+/* Form */
+
+#contactForm {
+  padding: 6rem 0;
+}
+
+#contactName,
+#contactEmail,
+#contactMessage,
+#contactSubject {
+  font-size: 18px;
+  border: none;
+  border-bottom: 3px solid var(--sixth-color);
+  padding-bottom: 5px;
+  font-family: "Lato", sans-serif;
+  outline: none;
+  width: 25%;
+  background-color: transparent;
+  color: var(--light-color);
+}
+
+#contactName,
+#contactEmail {
+  margin-right: 2rem;
+}
+
+#contactMessage {
+  margin-top: 4rem;
 }
