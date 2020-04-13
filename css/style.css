@@ -14,6 +14,7 @@
   --seventh-color: #503d90;
   --light-color: #fff;
   --dark-color: #333;
+  --grey-color: #43494d;
 }
 
 body {
@@ -85,6 +86,16 @@ a {
   cursor: pointer;
   background-color: var(--third-color);
   color: var(--light-color);
+}
+.btnCheckout {
+  padding: 0.6rem 2rem;
+  margin: 0.3rem 0;
+  width: 100%;
+  background-color: var(--fifth-color);
+  color: var(--light-color);
+}
+.btnCheckout:hover {
+  cursor: pointer;
 }
 
 /* Page Headers */
@@ -451,4 +462,151 @@ a {
 
 #contactMessage {
   margin-top: 4rem;
+}
+
+/* ----- SHOP ----- */
+
+#headerShop {
+  background: url("/img/neonshop1.jpg") no-repeat center center / cover;
+  background-color: black;
+  opacity: 0.9;
+}
+
+#cyberpunkShop {
+  display: flex;
+  background-color: var(--seventh-color);
+  justify-content: center;
+}
+.shopContainer {
+  background-color: var(--seventh-color);
+  padding: 8rem 4rem;
+  display: flex;
+}
+
+.shop {
+  background-color: var(--light-color);
+  border-radius: 5px;
+  max-width: 1000px;
+  min-width: 900px;
+}
+.shopHeadings {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  color: var(--grey-color);
+}
+.shopHeading {
+  padding: 1rem;
+  margin-right: 2rem;
+}
+#shopStr {
+  grid-column: 1 / span 3;
+  margin-left: 1rem;
+}
+#shopQty,
+#shopPrice,
+#shopStl {
+  margin-left: 1.5rem;
+}
+
+.item {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  padding: 3%;
+  border-top: 1px solid lightgray;
+}
+.itemImg {
+  width: 100px;
+  height: 100px;
+  margin: 0 3%;
+}
+.itemDetails {
+  margin: 0 4%;
+}
+.detail {
+  font-size: 14px;
+  color: var(--grey-color);
+  padding-bottom: 0.5rem;
+}
+.itemColor {
+  font-size: 14px;
+  color: var(--fifth-color);
+}
+
+.featureBtns {
+  display: flex;
+  margin: auto;
+}
+.removeBtn,
+.likeBtn {
+  width: 25px;
+  height: 25px;
+  margin: 0 0.8rem;
+}
+.removeBtn:hover,
+.likeBtn:hover {
+  cursor: pointer;
+}
+#removeBtnImg,
+#likeBtnImg {
+  width: 100%;
+}
+
+#shopCup {
+  width: 100%;
+}
+
+.shopQuantity {
+  display: flex;
+  margin: auto;
+}
+.quantity {
+  padding: 0 1rem;
+}
+.shopPrice {
+  margin: auto;
+}
+.shopSubtotal {
+  margin: auto;
+}
+
+#qtyImgPlus,
+#qtyImgMinus {
+  width: 25px;
+  height: 25px;
+}
+
+#qtyImgPlus:hover,
+#qtyImgMinus:hover {
+  cursor: pointer;
+}
+
+/* total */
+
+.totalContainer {
+  background-color: var(--light-color);
+  border-radius: 5px;
+  width: 300px;
+  height: 330px;
+  border: 1px solid lightgray;
+  padding: 1rem;
+}
+
+.subtotalSection,
+.vatSection,
+.totalSection {
+  display: flex;
+  padding: 0.5rem 0;
+  justify-content: space-between;
+  border-top: 1px solid lightgray;
+  border-bottom: 1px solid lightgray;
+  margin: 1rem 0;
+}
+.totalHeader {
+  text-align: center;
+  padding: 0.5rem;
+  color: var(--grey-color);
+  font-size: 14px;
+}
+.totalText {
+  font-weight: bold;
 }
