@@ -12,6 +12,7 @@
       <ul class="navUl">
         <a href="index.html"
           ><img
+            id="headerLogo"
             class="logo"
             src="/img/logoJoined2.png"
             alt="Everything Cyberpunk 2077"
@@ -54,13 +55,7 @@
                   alt="Remove"
                 />
               </div>
-              <div class="likeBtn">
-                <img
-                  id="likeBtnImg"
-                  src="/img/shop/like-before-scaled.png"
-                  alt=""
-                />
-              </div>
+              <div class="likeBtn"></div>
             </div>
             <div class="itemImg">
               <img
@@ -75,23 +70,27 @@
               <div class="itemColor">Multi-color</div>
             </div>
             <div class="shopQuantity">
-              <img
-                id="qtyImgMinus"
-                src="/img/shop/minus-btn-scaled.png"
-                alt="-"
+              <button
+                class="shopBtnMinus"
+                onclick="input_ChangeValue(this, '-');"
+              ></button>
+              <input
+                class="shopAmountInput"
+                onchange="calculateSubTotal(this);"
+                type="text"
+                value="0"
+                data-price="10.99"
               />
-              <div class="quantity">0</div>
-              <img
-                id="qtyImgPlus"
-                src="/img/shop/plus-btn-scaled.png"
-                alt="+"
-              />
+              <button
+                class="shopBtnPlus"
+                onclick="input_ChangeValue(this, '+');"
+              ></button>
             </div>
             <div class="shopPrice">£10.99</div>
             <div class="shopSubtotal">£0.00</div>
           </div>
           <!-- Item 2 -->
-          <div class="item" id="item1">
+          <div class="item" id="item2">
             <div class="featureBtns">
               <div class="removeBtn">
                 <img
@@ -100,13 +99,7 @@
                   alt="Remove"
                 />
               </div>
-              <div class="likeBtn">
-                <img
-                  id="likeBtnImg"
-                  src="/img/shop/like-before-scaled.png"
-                  alt=""
-                />
-              </div>
+              <div class="likeBtn"></div>
             </div>
             <div class="itemImg">
               <img
@@ -121,23 +114,27 @@
               <div class="itemColor">Multi-color</div>
             </div>
             <div class="shopQuantity">
-              <img
-                id="qtyImgMinus"
-                src="/img/shop/minus-btn-scaled.png"
-                alt="-"
+              <button
+                class="shopBtnMinus"
+                onclick="input_ChangeValue(this, '-')"
+              ></button>
+              <input
+                class="shopAmountInput"
+                onchange="calculateSubTotal(this);"
+                data-price="15.99"
+                type="text"
+                value="0"
               />
-              <div class="quantity">0</div>
-              <img
-                id="qtyImgPlus"
-                src="/img/shop/plus-btn-scaled.png"
-                alt="+"
-              />
+              <button
+                class="shopBtnPlus"
+                onclick="input_ChangeValue(this, '+')"
+              ></button>
             </div>
             <div class="shopPrice">£15.99</div>
             <div class="shopSubtotal">£0.00</div>
           </div>
           <!-- Item 3 -->
-          <div class="item" id="item1">
+          <div class="item" id="item3">
             <div class="featureBtns">
               <div class="removeBtn">
                 <img
@@ -146,13 +143,7 @@
                   alt="Remove"
                 />
               </div>
-              <div class="likeBtn">
-                <img
-                  id="likeBtnImg"
-                  src="/img/shop/like-before-scaled.png"
-                  alt=""
-                />
-              </div>
+              <div class="likeBtn"></div>
             </div>
             <div class="itemImg">
               <img
@@ -167,23 +158,21 @@
               <div class="itemColor">Dark</div>
             </div>
             <div class="shopQuantity">
-              <img
-                id="qtyImgMinus"
-                src="/img/shop/minus-btn-scaled.png"
-                alt="-"
-              />
-              <div class="quantity">0</div>
-              <img
-                id="qtyImgPlus"
-                src="/img/shop/plus-btn-scaled.png"
-                alt="+"
-              />
+              <button
+                class="shopBtnMinus"
+                onclick="input_ChangeValue(this, '-')"
+              ></button>
+              <input type="text" class="shopAmountInput" data-price="24.99" onchange="calculateSubTotal(this);" value="0"></input>
+              <button
+                class="shopBtnPlus"
+                onclick="input_ChangeValue(this, '+')"
+              ></button>
             </div>
             <div class="shopPrice">£24.99</div>
             <div class="shopSubtotal">£0.00</div>
           </div>
           <!-- Item 4 -->
-          <div class="item" id="item1">
+          <div class="item" id="item4">
             <div class="featureBtns">
               <div class="removeBtn">
                 <img
@@ -192,13 +181,7 @@
                   alt="Remove"
                 />
               </div>
-              <div class="likeBtn">
-                <img
-                  id="likeBtnImg"
-                  src="/img/shop/like-before-scaled.png"
-                  alt=""
-                />
-              </div>
+              <div class="likeBtn"></div>
             </div>
             <div class="itemImg">
               <img
@@ -225,17 +208,15 @@
               >
             </div>
             <div class="shopQuantity">
-              <img
-                id="qtyImgMinus"
-                src="/img/shop/minus-btn-scaled.png"
-                alt="-"
-              />
-              <div class="quantity">0</div>
-              <img
-                id="qtyImgPlus"
-                src="/img/shop/plus-btn-scaled.png"
-                alt="+"
-              />
+              <button
+                class="shopBtnMinus"
+                onclick="input_ChangeValue(this, '-')"
+              ></button>
+              <input type="text" class="shopAmountInput" data-price="7.99" onchange="calculateSubTotal(this);" value="0"></input>
+              <button
+                class="shopBtnPlus"
+                onclick="input_ChangeValue(this, '+')"
+              ></button>
             </div>
             <div class="shopPrice">£10.99</div>
             <div class="shopSubtotal">£0.00</div>
@@ -255,7 +236,7 @@
           </div>
           <div class="totalSection">
             <div class="totalText">TOTAL</div>
-            <div class="totalPrice">£0.00</div>
+            <div class="totalPrice" data-price="0">£0.00</div>
           </div>
           <button class="btnCheckout">GO TO SECURE CHECKOUT</button>
         </div>
@@ -302,5 +283,7 @@
         Designed and Created by <span class="sigSpan">Jake Knight</span> © 2020
       </div>
     </footer>
+
+    <script src="/app.js"></script>
   </body>
 </html>

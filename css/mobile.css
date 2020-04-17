@@ -1,0 +1,236 @@
+@media (max-width: 1445px) {
+  /* Index */
+  .headerTitle {
+    font-size: 3rem;
+  }
+  #card7img {
+    padding: 3rem 2rem;
+  }
+
+  /* About */
+  .creatorContainer {
+    display: block;
+  }
+  .creatorText,
+  .aboutVideo {
+    text-align: center;
+    width: 100%;
+  }
+}
+
+@media (max-width: 1330px) {
+  /* Shop */
+  .shopContainer {
+    display: block;
+  }
+  .totalContainer {
+    width: 100%;
+  }
+  .btnCheckout {
+    width: 300px;
+  }
+}
+
+@media (max-width: 1265px) {
+  /* Index */
+  #card7img {
+    padding: 5rem 2rem;
+  }
+
+  /* About */
+  .whoHeader {
+    width: 40%;
+    font-size: 5rem;
+  }
+  .whoTextContainer {
+    width: 60%;
+  }
+}
+
+@media (max-width: 1090px) {
+  /* Index */
+  .headerContainer {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .newsletterGrid {
+    display: block;
+  }
+
+  .card {
+    margin-bottom: 2rem;
+  }
+
+  /* Footer */
+  .footerColumns {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    padding: 4rem;
+  }
+  .siteLinks {
+    width: 70%;
+    padding: 3rem;
+    text-align: center;
+  }
+  .footerQuote {
+    text-align: center;
+  }
+  .join {
+    text-align: center;
+  }
+
+  /* Contact */
+
+  #contactName,
+  #contactEmail,
+  #contactMessage,
+  #contactSubject {
+    width: 30%;
+  }
+
+  /* Shop */
+
+  .shopHeadings {
+    display: none;
+  }
+  .item {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    padding: 3%;
+    border-top: 1px solid lightgray;
+    width: 100%;
+  }
+  .itemImg,
+  .itemDetails {
+    margin: 1.5rem auto;
+    text-align: center;
+  }
+  .shopPrice {
+    padding: 1rem 0;
+  }
+  .shopContainer {
+    width: 100%;
+  }
+}
+
+@media (max-width: 940px) {
+  /* Contact */
+
+  #contactName,
+  #contactEmail,
+  #contactMessage,
+  #contactSubject {
+    display: block;
+    width: 70%;
+  }
+  #contactName,
+  #contactEmail,
+  #contactSubject {
+    display: block;
+    margin-bottom: 2.5rem;
+  }
+
+  /* About */
+
+  .aboutInfo {
+    display: block;
+  }
+  .whoHeader {
+    font-size: 5rem;
+    word-spacing: normal;
+    width: 100%;
+  }
+  .whoTextContainer {
+    width: 100%;
+    padding: 6rem 2rem;
+  }
+}
+
+@media (max-width: 770px) {
+  /* Index */
+  #cardInfo7 {
+    display: block;
+  }
+  .cardWrapper {
+    width: 100%;
+  }
+  #card7img {
+    padding: 0;
+    width: 100%;
+  }
+
+  /* Nav */
+  #headerLogo {
+    display: none;
+  }
+  .navUl {
+    justify-content: center;
+    padding-right: 0;
+  }
+
+  /* About */
+  .aboutVideo {
+    width: 100%;
+    text-align: center;
+    padding: 2rem;
+  }
+  .intro-video {
+    width: 100%;
+  }
+}
+
+@media (max-width: 675px) {
+  /* Index */
+  #card1 {
+    display: block;
+  }
+  #card1img {
+    width: 100%;
+  }
+
+  /* Contact */
+  #contactName,
+  #contactEmail,
+  #contactMessage,
+  #contactSubject {
+    display: block;
+    width: 80%;
+  }
+
+  /* About */
+  .whoHeader {
+    font-size: 4rem;
+  }
+  .shopContainer {
+    padding: 8rem 2rem;
+  }
+}
+
+@media (max-width: 465px) {
+  /* Shop */
+  .btnCheckout {
+    width: 100%;
+  }
+
+  /* Footer */
+  .footerColumns {
+    padding: 4rem 2rem;
+  }
+
+  /* Nav */
+  .navUl {
+    font-size: 14px;
+  }
+
+  .headerContainer {
+    height: 70vh;
+  }
+}
+
+@media (max-width: 360px) {
+  .navLi {
+    padding: 1rem;
+  }
+  .footerColumns {
+    padding: 4rem 1rem;
+  }
+}

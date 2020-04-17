@@ -98,6 +98,34 @@ a {
   cursor: pointer;
 }
 
+.shopBtnMinus {
+  background: url("/img/shop/minus-btn-scaled.png") no-repeat center center /
+    cover;
+  width: 25px;
+  height: 25px;
+  border: none;
+  outline: none;
+}
+.shopBtnMinus:hover,
+.shopBtnPlus:hover {
+  cursor: pointer;
+}
+.shopBtnPlus {
+  background: url("/img/shop/plus-btn-scaled.png") no-repeat center center /
+    cover;
+  width: 25px;
+  height: 25px;
+  border: none;
+  outline: none;
+}
+.shopAmountInput {
+  width: 30px;
+  font-size: 17px;
+  text-align: center;
+  outline: none;
+  border: none;
+}
+
 /* Page Headers */
 
 .pageHeader {
@@ -265,6 +293,7 @@ a {
 }
 #card7img {
   width: 50%;
+  padding: 1rem;
 }
 
 /* ----- Footer Main ----- */
@@ -375,6 +404,7 @@ a {
   font-weight: bold;
   color: #ccc;
   word-spacing: 999px;
+  padding-top: 4rem;
 }
 .whoTextContainer {
   padding: 6rem 0;
@@ -486,8 +516,6 @@ a {
 .shop {
   background-color: var(--light-color);
   border-radius: 5px;
-  max-width: 1000px;
-  min-width: 900px;
 }
 .shopHeadings {
   display: grid;
@@ -545,6 +573,12 @@ a {
 .removeBtn:hover,
 .likeBtn:hover {
   cursor: pointer;
+}
+.likeBtn {
+  background: url("/img/shop/like-before.png") no-repeat center center / cover;
+}
+.active {
+  background: url("/img/shop/like.png") no-repeat center center / cover;
 }
 #removeBtnImg,
 #likeBtnImg {
