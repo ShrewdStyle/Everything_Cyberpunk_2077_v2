@@ -7,4 +7,8 @@ The previous versions repository can be found here "https://github.com/ShrewdSty
 
 This newsletter will have all need to know information on the current state of the game and additional information e.g. the lore, characters played etc...
 
-This project was also a good opportinuty for me to implement a online store where users are able to select certain products and then have a subtotal, total and the VAT total included.
+![](img/README/newsletters.png)
+
+This project was also a good opportunity for me to implement a online store where users are able to select certain products and then have a subtotal, total and the VAT total included. I have also added a like button which will toggle an active property on and off when selected.
+
+![](img/README/shop.png)
